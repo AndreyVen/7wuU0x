@@ -159,10 +159,10 @@ am__append_22 = $(SSE42_CXXFLAGS)
 #  wallet/test/wallet_test_fixture.h
 
 #am__append_27 = $(LIBVENDETTA_WALLET)
-#am__append_28 = $(ZMQ_LIBS)
+##am__append_28 = $(ZMQ_LIBS)
 #am__append_29 = $(CLEAN_VENDETTA_TEST)
 #am__append_30 = bench/bench_vendetta
-#am__append_31 = $(LIBVENDETTA_ZMQ) $(ZMQ_LIBS)
+##am__append_31 = $(LIBVENDETTA_ZMQ) $(ZMQ_LIBS)
 #am__append_32 = bench/coin_selection.cpp
 #am__append_33 = $(CLEAN_VENDETTA_BENCH)
 am__append_34 = qt/vendetta-qt
@@ -172,7 +172,7 @@ am__append_37 = $(VENDETTA_QT_WALLET_CPP)
 #am__append_38 = $(VENDETTA_MM)
 #am__append_39 = $(VENDETTA_RC)
 am__append_40 = $(LIBVENDETTA_UTIL) $(LIBVENDETTA_WALLET)
-am__append_41 = $(LIBVENDETTA_ZMQ) $(ZMQ_LIBS)
+#am__append_41 = $(LIBVENDETTA_ZMQ) $(ZMQ_LIBS)
 am__append_42 = $(CLEAN_QT)
 #am__append_43 = qt/test/test_vendetta-qt
 #am__append_44 = qt/test/test_vendetta-qt
@@ -188,7 +188,7 @@ am__append_42 = $(CLEAN_QT)
 #  wallet/test/wallet_test_fixture.cpp
 
 #am__append_47 = $(LIBVENDETTA_UTIL) $(LIBVENDETTA_WALLET)
-#am__append_48 = $(LIBVENDETTA_ZMQ) $(ZMQ_LIBS)
+##am__append_48 = $(LIBVENDETTA_ZMQ) $(ZMQ_LIBS)
 #am__append_49 = $(CLEAN_VENDETTA_QT_TEST)
 subdir = src
 SUBDIRS =
@@ -557,10 +557,10 @@ libvendetta_zmq_a_LIBADD =
 am__libvendetta_zmq_a_SOURCES_DIST = zmq/zmqabstractnotifier.cpp \
 	zmq/zmqnotificationinterface.cpp zmq/zmqpublishnotifier.cpp \
 	zmq/zmqrpc.cpp
-am_libvendetta_zmq_a_OBJECTS = zmq/libvendetta_zmq_a-zmqabstractnotifier.$(OBJEXT) \
-	zmq/libvendetta_zmq_a-zmqnotificationinterface.$(OBJEXT) \
-	zmq/libvendetta_zmq_a-zmqpublishnotifier.$(OBJEXT) \
-	zmq/libvendetta_zmq_a-zmqrpc.$(OBJEXT)
+#am_libvendetta_zmq_a_OBJECTS = zmq/libvendetta_zmq_a-zmqabstractnotifier.$(OBJEXT) \
+#	zmq/libvendetta_zmq_a-zmqnotificationinterface.$(OBJEXT) \
+#	zmq/libvendetta_zmq_a-zmqpublishnotifier.$(OBJEXT) \
+#	zmq/libvendetta_zmq_a-zmqrpc.$(OBJEXT)
 libvendetta_zmq_a_OBJECTS = $(am_libvendetta_zmq_a_OBJECTS)
 qt_libvendettaqt_a_AR = $(AR) $(ARFLAGS)
 qt_libvendettaqt_a_LIBADD =
@@ -942,9 +942,9 @@ am__DEPENDENCIES_2 = $(am__append_15)
 am__DEPENDENCIES_3 =
 #am__DEPENDENCIES_4 = $(am__DEPENDENCIES_3)
 am__DEPENDENCIES_4 = univalue/libunivalue.la
-#am__DEPENDENCIES_5 =  \
-#	$(LIBVENDETTA_ZMQ) \
-#	$(am__DEPENDENCIES_3)
+##am__DEPENDENCIES_5 =  \
+##	$(LIBVENDETTA_ZMQ) \
+##	$(am__DEPENDENCIES_3)
 #bench_bench_vendetta_DEPENDENCIES =  \
 #	$(LIBVENDETTA_WALLET) $(LIBVENDETTA_SERVER) \
 #	$(LIBVENDETTA_COMMON) $(LIBVENDETTA_UTIL) \
@@ -994,9 +994,9 @@ am__qt_test_test_vendetta_qt_SOURCES_DIST = qt/test/compattests.cpp \
 qt_test_test_vendetta_qt_OBJECTS =  \
 	$(am_qt_test_test_vendetta_qt_OBJECTS) \
 	$(nodist_qt_test_test_vendetta_qt_OBJECTS)
-#am__DEPENDENCIES_6 =  \
-#	$(LIBVENDETTA_ZMQ) \
-#	$(am__DEPENDENCIES_3)
+##am__DEPENDENCIES_6 =  \
+##	$(LIBVENDETTA_ZMQ) \
+##	$(am__DEPENDENCIES_3)
 #qt_test_test_vendetta_qt_DEPENDENCIES =  \
 #	$(LIBVENDETTAQT) $(LIBVENDETTA_SERVER) \
 #	$(am__append_47) $(am__DEPENDENCIES_6) \
@@ -1038,9 +1038,9 @@ am_qt_vendetta_qt_OBJECTS =  \
 	qt/qt_vendetta_qt-vendetta.$(OBJEXT) \
 	$(am__objects_27) $(am__objects_29)
 qt_vendetta_qt_OBJECTS = $(am_qt_vendetta_qt_OBJECTS)
-am__DEPENDENCIES_7 =  \
-	$(LIBVENDETTA_ZMQ) \
-	$(am__DEPENDENCIES_3)
+#am__DEPENDENCIES_7 =  \
+#	$(LIBVENDETTA_ZMQ) \
+#	$(am__DEPENDENCIES_3)
 qt_vendetta_qt_DEPENDENCIES = qt/libvendettaqt.a \
 	$(LIBVENDETTA_SERVER) $(am__append_40) \
 	$(am__DEPENDENCIES_7) $(LIBVENDETTA_CLI) \
@@ -1183,8 +1183,8 @@ am__test_test_vendetta_SOURCES_DIST = test/test_vendetta_main.cpp \
 #	$(am__objects_34)
 test_test_vendetta_OBJECTS = $(am_test_test_vendetta_OBJECTS) \
 	$(nodist_test_test_vendetta_OBJECTS)
-#am__DEPENDENCIES_8 =  \
-#	$(am__DEPENDENCIES_3)
+##am__DEPENDENCIES_8 =  \
+##	$(am__DEPENDENCIES_3)
 #test_test_vendetta_DEPENDENCIES = $(am__append_27) \
 #	$(LIBVENDETTA_SERVER) $(LIBVENDETTA_CLI) \
 #	$(LIBVENDETTA_COMMON) $(LIBVENDETTA_UTIL) \
@@ -1627,14 +1627,14 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /usr/local/src/vendetta17/build-aux/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/devyamp/Desktop/7wuU0x-master/build-aux/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/ar
 ARFLAGS = cr
-AUTOCONF = ${SHELL} /usr/local/src/vendetta17/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /usr/local/src/vendetta17/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /usr/local/src/vendetta17/build-aux/missing automake-1.15
+AUTOCONF = ${SHELL} /home/devyamp/Desktop/7wuU0x-master/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/devyamp/Desktop/7wuU0x-master/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /home/devyamp/Desktop/7wuU0x-master/build-aux/missing automake-1.15
 AVX2_CXXFLAGS = -mavx -mavx2
 AWK = gawk
 BDB_CFLAGS = 
@@ -1731,7 +1731,7 @@ LTLIBOBJS =
 LT_SYS_LIBRARY_PATH = 
 LUPDATE = /usr/lib/qt5/bin/lupdate
 MAINT = 
-MAKEINFO = ${SHELL} /usr/local/src/vendetta17/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /home/devyamp/Desktop/7wuU0x-master/build-aux/missing makeinfo
 MAKENSIS = 
 MANIFEST_TOOL = :
 MINIUPNPC_CPPFLAGS = 
@@ -1845,11 +1845,11 @@ X11XCB_CFLAGS =
 X11XCB_LIBS = 
 XGETTEXT = /usr/bin/xgettext
 ZMQ_CFLAGS = 
-ZMQ_LIBS = -lzmq
-abs_builddir = /usr/local/src/vendetta17/src
-abs_srcdir = /usr/local/src/vendetta17/src
-abs_top_builddir = /usr/local/src/vendetta17
-abs_top_srcdir = /usr/local/src/vendetta17
+ZMQ_LIBS = 
+abs_builddir = /home/devyamp/Desktop/7wuU0x-master/src
+abs_srcdir = /home/devyamp/Desktop/7wuU0x-master/src
+abs_top_builddir = /home/devyamp/Desktop/7wuU0x-master
+abs_top_srcdir = /home/devyamp/Desktop/7wuU0x-master
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -1881,7 +1881,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /usr/local/src/vendetta17/build-aux/install-sh
+install_sh = ${SHELL} /home/devyamp/Desktop/7wuU0x-master/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -1929,7 +1929,7 @@ LIBVENDETTA_UTIL = libvendetta_util.a
 LIBVENDETTA_CRYPTO_BASE = crypto/libvendetta_crypto_base.a
 LIBVENDETTAQT = qt/libvendettaqt.a
 LIBSECP256K1 = secp256k1/libsecp256k1.la
-LIBVENDETTA_ZMQ = libvendetta_zmq.a
+#LIBVENDETTA_ZMQ = libvendetta_zmq.a
 LIBVENDETTACONSENSUS = libvendettaconsensus.la
 LIBVENDETTA_WALLET = libvendetta_wallet.a
 LIBVENDETTA_CRYPTO = $(LIBVENDETTA_CRYPTO_BASE) $(am__append_1) \
@@ -2103,13 +2103,13 @@ libvendetta_server_a_SOURCES = \
   versionbits.cpp \
   $(VENDETTA_CORE_H)
 
-libvendetta_zmq_a_CPPFLAGS = $(VENDETTA_INCLUDES) $(ZMQ_CFLAGS)
-libvendetta_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libvendetta_zmq_a_SOURCES = \
-  zmq/zmqabstractnotifier.cpp \
-  zmq/zmqnotificationinterface.cpp \
-  zmq/zmqpublishnotifier.cpp \
-  zmq/zmqrpc.cpp
+#libvendetta_zmq_a_CPPFLAGS = $(VENDETTA_INCLUDES) $(ZMQ_CFLAGS)
+#libvendetta_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+#libvendetta_zmq_a_SOURCES = \
+#  zmq/zmqabstractnotifier.cpp \
+#  zmq/zmqnotificationinterface.cpp \
+#  zmq/zmqpublishnotifier.cpp \
+#  zmq/zmqrpc.cpp
 
 
 # wallet: shared between vendettad and vendetta-qt, but only linked

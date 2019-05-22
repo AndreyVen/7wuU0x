@@ -164,7 +164,7 @@ public:
         nPruneAfterHeight = 100000;
 
         genesis = CreateGenesisBlock(1557776235, 264155271, 0x1d00ffff, 1, 50 * COIN);
-        MineGenesis(genesis, consensus.powLimit, true);
+        //MineGenesis(genesis, consensus.powLimit, true);
 	    consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x"));
         assert(genesis.hashMerkleRoot == uint256S("0x"));
@@ -174,7 +174,7 @@ public:
         // This is fine at runtime as we'll fall back to using them as a oneshot if they don't support the
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
-        vSeeds.emplace_back("192.168.0.167");
+        //vSeeds.emplace_back("192.168.0.167");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,71);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -189,13 +189,13 @@ public:
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
-
-        checkpointData = {{{/*0, uint256S("0x")},*/}};
-
+        checkpointData = {{
+        //        
+        }};        
         chainTxData = ChainTxData{
-        1558202395,
-        6,
-        0.007220216606498195,
+       // 1558202395,
+       // 6,
+       // 0.007220216606498195,
         };
 
         /* disable fallback fee on mainnet */
@@ -275,6 +275,7 @@ public:
         fRequireStandard = false;
         fMineBlocksOnDemand = false;
 
+//        checkpointData = {{{0, uint256S("0x00")},}};                
         checkpointData = {{{0, uint256S("0x00")},}};        
 
         chainTxData = ChainTxData{
@@ -330,9 +331,9 @@ public:
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1558017421, 0, 0x207fffff, 1, 50 * COIN);
-//MineGenesis(genesis, consensus.powLimit, true);
+        //MineGenesis(genesis, consensus.powLimit, true);
         consensus.hashGenesisBlock = genesis.GetHash();
-assert(consensus.hashGenesisBlock == uint256S("0x"));
+        assert(consensus.hashGenesisBlock == uint256S("0x"));
         assert(genesis.hashMerkleRoot == uint256S("0x2236cfe9e5985d5fb57f9a2cd42038bd2d39157434be50d294e1cf11a351561d"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
@@ -342,8 +343,8 @@ assert(consensus.hashGenesisBlock == uint256S("0x"));
         fRequireStandard = false;
         fMineBlocksOnDemand = true;
 
-    checkpointData = {{{0, uint256S("0x7d8d08343cceb05f9e47809644a032c00b08a92930c4c4f69918efbf6f1d154f")},}};
-    //checkpointData = {{}};
+        checkpointData = {{{0, uint256S("0x7d8d08343cceb05f9e47809644a032c00b08a92930c4c4f69918efbf6f1d154f")},}};
+        //checkpointData = {{}};
         /*chainTxData = ChainTxData{
             0,
             0,

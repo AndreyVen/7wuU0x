@@ -10,11 +10,11 @@ SetCompressor /SOLID lzma
 !define URL https://vendettacore.org/
 
 # MUI Symbol Definitions
-!define MUI_ICON "/usr/local/src/vendetta17/share/pixmaps/vendetta.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/usr/local/src/vendetta17/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/devyamp/Desktop/7wuU0x-master/share/pixmaps/vendetta.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/devyamp/Desktop/7wuU0x-master/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/usr/local/src/vendetta17/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/devyamp/Desktop/7wuU0x-master/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
@@ -23,7 +23,7 @@ SetCompressor /SOLID lzma
 !define MUI_FINISHPAGE_RUN "$WINDIR\explorer.exe"
 !define MUI_FINISHPAGE_RUN_PARAMETERS $INSTDIR\vendetta-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/usr/local/src/vendetta17/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/devyamp/Desktop/7wuU0x-master/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -49,7 +49,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /usr/local/src/vendetta17/vendetta-${VERSION}-win-setup.exe
+OutFile /home/devyamp/Desktop/7wuU0x-master/vendetta-${VERSION}-win-setup.exe
 !if "" == "64"
 InstallDir $PROGRAMFILES64\Vendetta
 !else
@@ -74,15 +74,15 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /usr/local/src/vendetta17/release/vendetta-qt
-    File /oname=COPYING.txt /usr/local/src/vendetta17/COPYING
-    File /oname=readme.txt /usr/local/src/vendetta17/doc/README_windows.txt
+    File /home/devyamp/Desktop/7wuU0x-master/release/vendetta-qt
+    File /oname=COPYING.txt /home/devyamp/Desktop/7wuU0x-master/COPYING
+    File /oname=readme.txt /home/devyamp/Desktop/7wuU0x-master/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /usr/local/src/vendetta17/release/vendettad
-    File /usr/local/src/vendetta17/release/vendetta-cli
-    File /usr/local/src/vendetta17/release/vendetta-tx
+    File /home/devyamp/Desktop/7wuU0x-master/release/vendettad
+    File /home/devyamp/Desktop/7wuU0x-master/release/vendetta-cli
+    File /home/devyamp/Desktop/7wuU0x-master/release/vendetta-tx
     SetOutPath $INSTDIR\doc
-    File /r /x Makefile* /usr/local/src/vendetta17/doc\*.*
+    File /r /x Makefile* /home/devyamp/Desktop/7wuU0x-master/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd
