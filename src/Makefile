@@ -144,27 +144,27 @@ am__append_18 = -DLEVELDB_PLATFORM_POSIX
 am__append_20 = leveldb/port/port_posix.cc
 am__append_21 = -DLEVELDB_PLATFORM_POSIX_SSE
 am__append_22 = $(SSE42_CXXFLAGS)
-#am__append_23 = test/test_vendetta
-#am__append_24 = test/test_vendetta_fuzzy
-#am__append_25 = \
-#  wallet/test/accounting_tests.cpp \
-#  wallet/test/db_tests.cpp \
-#  wallet/test/psbt_wallet_tests.cpp \
-#  wallet/test/wallet_tests.cpp \
-#  wallet/test/wallet_crypto_tests.cpp \
-#  wallet/test/coinselector_tests.cpp
+am__append_23 = test/test_vendetta
+am__append_24 = test/test_vendetta_fuzzy
+am__append_25 = \
+  wallet/test/accounting_tests.cpp \
+  wallet/test/db_tests.cpp \
+  wallet/test/psbt_wallet_tests.cpp \
+  wallet/test/wallet_tests.cpp \
+  wallet/test/wallet_crypto_tests.cpp \
+  wallet/test/coinselector_tests.cpp
 
-#am__append_26 = \
-#  wallet/test/wallet_test_fixture.cpp \
-#  wallet/test/wallet_test_fixture.h
+am__append_26 = \
+  wallet/test/wallet_test_fixture.cpp \
+  wallet/test/wallet_test_fixture.h
 
-#am__append_27 = $(LIBVENDETTA_WALLET)
-##am__append_28 = $(ZMQ_LIBS)
-#am__append_29 = $(CLEAN_VENDETTA_TEST)
-#am__append_30 = bench/bench_vendetta
-##am__append_31 = $(LIBVENDETTA_ZMQ) $(ZMQ_LIBS)
-#am__append_32 = bench/coin_selection.cpp
-#am__append_33 = $(CLEAN_VENDETTA_BENCH)
+am__append_27 = $(LIBVENDETTA_WALLET)
+#am__append_28 = $(ZMQ_LIBS)
+am__append_29 = $(CLEAN_VENDETTA_TEST)
+am__append_30 = bench/bench_vendetta
+#am__append_31 = $(LIBVENDETTA_ZMQ) $(ZMQ_LIBS)
+am__append_32 = bench/coin_selection.cpp
+am__append_33 = $(CLEAN_VENDETTA_BENCH)
 am__append_34 = qt/vendetta-qt
 am__append_35 = qt/libvendettaqt.a
 #am__append_36 = $(VENDETTA_QT_WINDOWS_CPP)
@@ -174,22 +174,22 @@ am__append_37 = $(VENDETTA_QT_WALLET_CPP)
 am__append_40 = $(LIBVENDETTA_UTIL) $(LIBVENDETTA_WALLET)
 #am__append_41 = $(LIBVENDETTA_ZMQ) $(ZMQ_LIBS)
 am__append_42 = $(CLEAN_QT)
-#am__append_43 = qt/test/test_vendetta-qt
-#am__append_44 = qt/test/test_vendetta-qt
-#am__append_45 = \
-#  qt/test/moc_addressbooktests.cpp \
-#  qt/test/moc_paymentservertests.cpp \
-#  qt/test/moc_wallettests.cpp
+am__append_43 = qt/test/test_vendetta-qt
+am__append_44 = qt/test/test_vendetta-qt
+am__append_45 = \
+  qt/test/moc_addressbooktests.cpp \
+  qt/test/moc_paymentservertests.cpp \
+  qt/test/moc_wallettests.cpp
 
-#am__append_46 = \
-#  qt/test/addressbooktests.cpp \
-#  qt/test/paymentservertests.cpp \
-#  qt/test/wallettests.cpp \
-#  wallet/test/wallet_test_fixture.cpp
+am__append_46 = \
+  qt/test/addressbooktests.cpp \
+  qt/test/paymentservertests.cpp \
+  qt/test/wallettests.cpp \
+  wallet/test/wallet_test_fixture.cpp
 
-#am__append_47 = $(LIBVENDETTA_UTIL) $(LIBVENDETTA_WALLET)
-##am__append_48 = $(LIBVENDETTA_ZMQ) $(ZMQ_LIBS)
-#am__append_49 = $(CLEAN_VENDETTA_QT_TEST)
+am__append_47 = $(LIBVENDETTA_UTIL) $(LIBVENDETTA_WALLET)
+#am__append_48 = $(LIBVENDETTA_ZMQ) $(ZMQ_LIBS)
+am__append_49 = $(CLEAN_VENDETTA_QT_TEST)
 subdir = src
 SUBDIRS =
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -897,12 +897,12 @@ am_libvendettaconsensus_la_rpath = -rpath \
 am__EXEEXT_1 = vendettad$(EXEEXT)
 am__EXEEXT_2 = vendetta-cli$(EXEEXT) \
 	vendetta-tx$(EXEEXT)
-#am__EXEEXT_3 = test/test_vendetta$(EXEEXT)
-#am__EXEEXT_4 = bench/bench_vendetta$(EXEEXT)
+am__EXEEXT_3 = test/test_vendetta$(EXEEXT)
+am__EXEEXT_4 = bench/bench_vendetta$(EXEEXT)
 am__EXEEXT_5 = qt/vendetta-qt$(EXEEXT)
-#am__EXEEXT_6 =  \
-#	qt/test/test_vendetta-qt$(EXEEXT)
-#am__EXEEXT_7 = test/test_vendetta_fuzzy$(EXEEXT)
+am__EXEEXT_6 =  \
+	qt/test/test_vendetta-qt$(EXEEXT)
+am__EXEEXT_7 = test/test_vendetta_fuzzy$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS) $(noinst_PROGRAMS)
 am__bench_bench_vendetta_SOURCES_DIST = bench/data/block413567.raw \
 	bench/bench_vendetta.cpp bench/bench.cpp bench/bench.h \
@@ -913,28 +913,28 @@ am__bench_bench_vendetta_SOURCES_DIST = bench/data/block413567.raw \
 	bench/verify_script.cpp bench/base58.cpp bench/bech32.cpp \
 	bench/lockedpool.cpp bench/prevector.cpp \
 	bench/coin_selection.cpp
-#am__objects_20 = bench/bench_bench_vendetta-coin_selection.$(OBJEXT)
-#am_bench_bench_vendetta_OBJECTS = $(am__objects_4) \
-#	bench/bench_bench_vendetta-bench_vendetta.$(OBJEXT) \
-#	bench/bench_bench_vendetta-bench.$(OBJEXT) \
-#	bench/bench_bench_vendetta-block_assemble.$(OBJEXT) \
-#	bench/bench_bench_vendetta-checkblock.$(OBJEXT) \
-#	bench/bench_bench_vendetta-checkqueue.$(OBJEXT) \
-#	bench/bench_bench_vendetta-examples.$(OBJEXT) \
-#	bench/bench_bench_vendetta-rollingbloom.$(OBJEXT) \
-#	bench/bench_bench_vendetta-crypto_hash.$(OBJEXT) \
-#	bench/bench_bench_vendetta-ccoins_caching.$(OBJEXT) \
-#	bench/bench_bench_vendetta-merkle_root.$(OBJEXT) \
-#	bench/bench_bench_vendetta-mempool_eviction.$(OBJEXT) \
-#	bench/bench_bench_vendetta-verify_script.$(OBJEXT) \
-#	bench/bench_bench_vendetta-base58.$(OBJEXT) \
-#	bench/bench_bench_vendetta-bech32.$(OBJEXT) \
-#	bench/bench_bench_vendetta-lockedpool.$(OBJEXT) \
-#	bench/bench_bench_vendetta-prevector.$(OBJEXT) \
-#	$(am__objects_20)
-#am__objects_21 = $(am__objects_4)
-#nodist_bench_bench_vendetta_OBJECTS =  \
-#	$(am__objects_21)
+am__objects_20 = bench/bench_bench_vendetta-coin_selection.$(OBJEXT)
+am_bench_bench_vendetta_OBJECTS = $(am__objects_4) \
+	bench/bench_bench_vendetta-bench_vendetta.$(OBJEXT) \
+	bench/bench_bench_vendetta-bench.$(OBJEXT) \
+	bench/bench_bench_vendetta-block_assemble.$(OBJEXT) \
+	bench/bench_bench_vendetta-checkblock.$(OBJEXT) \
+	bench/bench_bench_vendetta-checkqueue.$(OBJEXT) \
+	bench/bench_bench_vendetta-examples.$(OBJEXT) \
+	bench/bench_bench_vendetta-rollingbloom.$(OBJEXT) \
+	bench/bench_bench_vendetta-crypto_hash.$(OBJEXT) \
+	bench/bench_bench_vendetta-ccoins_caching.$(OBJEXT) \
+	bench/bench_bench_vendetta-merkle_root.$(OBJEXT) \
+	bench/bench_bench_vendetta-mempool_eviction.$(OBJEXT) \
+	bench/bench_bench_vendetta-verify_script.$(OBJEXT) \
+	bench/bench_bench_vendetta-base58.$(OBJEXT) \
+	bench/bench_bench_vendetta-bech32.$(OBJEXT) \
+	bench/bench_bench_vendetta-lockedpool.$(OBJEXT) \
+	bench/bench_bench_vendetta-prevector.$(OBJEXT) \
+	$(am__objects_20)
+am__objects_21 = $(am__objects_4)
+nodist_bench_bench_vendetta_OBJECTS =  \
+	$(am__objects_21)
 bench_bench_vendetta_OBJECTS = $(am_bench_bench_vendetta_OBJECTS) \
 	$(nodist_bench_bench_vendetta_OBJECTS)
 am__DEPENDENCIES_1 = $(am__append_14)
@@ -942,20 +942,20 @@ am__DEPENDENCIES_2 = $(am__append_15)
 am__DEPENDENCIES_3 =
 #am__DEPENDENCIES_4 = $(am__DEPENDENCIES_3)
 am__DEPENDENCIES_4 = univalue/libunivalue.la
-##am__DEPENDENCIES_5 =  \
-##	$(LIBVENDETTA_ZMQ) \
-##	$(am__DEPENDENCIES_3)
-#bench_bench_vendetta_DEPENDENCIES =  \
-#	$(LIBVENDETTA_WALLET) $(LIBVENDETTA_SERVER) \
-#	$(LIBVENDETTA_COMMON) $(LIBVENDETTA_UTIL) \
-#	$(LIBVENDETTA_CONSENSUS) \
-#	$(LIBVENDETTA_CRYPTO) $(am__DEPENDENCIES_1) \
-#	$(LIBLEVELDB_SSE42) $(am__DEPENDENCIES_2) \
-#	$(LIBSECP256K1) $(am__DEPENDENCIES_4) \
-#	$(am__DEPENDENCIES_5) $(am__DEPENDENCIES_3) \
-#	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-#	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-#	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3)
+#am__DEPENDENCIES_5 =  \
+#	$(LIBVENDETTA_ZMQ) \
+#	$(am__DEPENDENCIES_3)
+bench_bench_vendetta_DEPENDENCIES =  \
+	$(LIBVENDETTA_WALLET) $(LIBVENDETTA_SERVER) \
+	$(LIBVENDETTA_COMMON) $(LIBVENDETTA_UTIL) \
+	$(LIBVENDETTA_CONSENSUS) \
+	$(LIBVENDETTA_CRYPTO) $(am__DEPENDENCIES_1) \
+	$(LIBLEVELDB_SSE42) $(am__DEPENDENCIES_2) \
+	$(LIBSECP256K1) $(am__DEPENDENCIES_4) \
+	$(am__DEPENDENCIES_5) $(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3)
 bench_bench_vendetta_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(bench_bench_vendetta_CXXFLAGS) $(CXXFLAGS) \
@@ -970,56 +970,56 @@ am__qt_test_test_vendetta_qt_SOURCES_DIST = qt/test/compattests.cpp \
 	test/test_vendetta.h qt/test/addressbooktests.cpp \
 	qt/test/paymentservertests.cpp qt/test/wallettests.cpp \
 	wallet/test/wallet_test_fixture.cpp
-#am__objects_22 = test/qt_test_test_vendetta_qt-test_vendetta.$(OBJEXT)
-#am__objects_23 = qt/test/qt_test_test_vendetta_qt-addressbooktests.$(OBJEXT) \
-#	qt/test/qt_test_test_vendetta_qt-paymentservertests.$(OBJEXT) \
-#	qt/test/qt_test_test_vendetta_qt-wallettests.$(OBJEXT) \
-#	wallet/test/qt_test_test_vendetta_qt-wallet_test_fixture.$(OBJEXT)
-#am_qt_test_test_vendetta_qt_OBJECTS = qt/test/qt_test_test_vendetta_qt-compattests.$(OBJEXT) \
-#	qt/test/qt_test_test_vendetta_qt-rpcnestedtests.$(OBJEXT) \
-#	qt/test/qt_test_test_vendetta_qt-test_main.$(OBJEXT) \
-#	qt/test/qt_test_test_vendetta_qt-uritests.$(OBJEXT) \
-#	qt/test/qt_test_test_vendetta_qt-util.$(OBJEXT) \
-#	$(am__objects_4) $(am__objects_22) \
-#	$(am__objects_4) $(am__objects_23)
-#am__objects_24 = qt/test/qt_test_test_vendetta_qt-moc_addressbooktests.$(OBJEXT) \
-#	qt/test/qt_test_test_vendetta_qt-moc_paymentservertests.$(OBJEXT) \
-#	qt/test/qt_test_test_vendetta_qt-moc_wallettests.$(OBJEXT)
-#am__objects_25 = qt/test/qt_test_test_vendetta_qt-moc_compattests.$(OBJEXT) \
-#	qt/test/qt_test_test_vendetta_qt-moc_rpcnestedtests.$(OBJEXT) \
-#	qt/test/qt_test_test_vendetta_qt-moc_uritests.$(OBJEXT) \
-#	$(am__objects_24)
-#nodist_qt_test_test_vendetta_qt_OBJECTS =  \
-#	$(am__objects_25)
+am__objects_22 = test/qt_test_test_vendetta_qt-test_vendetta.$(OBJEXT)
+am__objects_23 = qt/test/qt_test_test_vendetta_qt-addressbooktests.$(OBJEXT) \
+	qt/test/qt_test_test_vendetta_qt-paymentservertests.$(OBJEXT) \
+	qt/test/qt_test_test_vendetta_qt-wallettests.$(OBJEXT) \
+	wallet/test/qt_test_test_vendetta_qt-wallet_test_fixture.$(OBJEXT)
+am_qt_test_test_vendetta_qt_OBJECTS = qt/test/qt_test_test_vendetta_qt-compattests.$(OBJEXT) \
+	qt/test/qt_test_test_vendetta_qt-rpcnestedtests.$(OBJEXT) \
+	qt/test/qt_test_test_vendetta_qt-test_main.$(OBJEXT) \
+	qt/test/qt_test_test_vendetta_qt-uritests.$(OBJEXT) \
+	qt/test/qt_test_test_vendetta_qt-util.$(OBJEXT) \
+	$(am__objects_4) $(am__objects_22) \
+	$(am__objects_4) $(am__objects_23)
+am__objects_24 = qt/test/qt_test_test_vendetta_qt-moc_addressbooktests.$(OBJEXT) \
+	qt/test/qt_test_test_vendetta_qt-moc_paymentservertests.$(OBJEXT) \
+	qt/test/qt_test_test_vendetta_qt-moc_wallettests.$(OBJEXT)
+am__objects_25 = qt/test/qt_test_test_vendetta_qt-moc_compattests.$(OBJEXT) \
+	qt/test/qt_test_test_vendetta_qt-moc_rpcnestedtests.$(OBJEXT) \
+	qt/test/qt_test_test_vendetta_qt-moc_uritests.$(OBJEXT) \
+	$(am__objects_24)
+nodist_qt_test_test_vendetta_qt_OBJECTS =  \
+	$(am__objects_25)
 qt_test_test_vendetta_qt_OBJECTS =  \
 	$(am_qt_test_test_vendetta_qt_OBJECTS) \
 	$(nodist_qt_test_test_vendetta_qt_OBJECTS)
-##am__DEPENDENCIES_6 =  \
-##	$(LIBVENDETTA_ZMQ) \
-##	$(am__DEPENDENCIES_3)
-#qt_test_test_vendetta_qt_DEPENDENCIES =  \
-#	$(LIBVENDETTAQT) $(LIBVENDETTA_SERVER) \
-#	$(am__append_47) $(am__DEPENDENCIES_6) \
-#	$(LIBVENDETTA_CLI) $(LIBVENDETTA_COMMON) \
-#	$(LIBVENDETTA_UTIL) \
-#	$(LIBVENDETTA_CONSENSUS) \
-#	$(LIBVENDETTA_CRYPTO) \
-#	$(am__DEPENDENCIES_4) \
-#	$(am__DEPENDENCIES_1) \
-#	$(LIBLEVELDB_SSE42) \
-#	$(am__DEPENDENCIES_2) \
-#	$(am__DEPENDENCIES_3) \
-#	$(am__DEPENDENCIES_3) \
-#	$(am__DEPENDENCIES_3) \
-#	$(am__DEPENDENCIES_3) \
-#	$(am__DEPENDENCIES_3) \
-#	$(am__DEPENDENCIES_3) \
-#	$(am__DEPENDENCIES_3) \
-#	$(am__DEPENDENCIES_3) \
-#	$(am__DEPENDENCIES_3) \
-#	$(am__DEPENDENCIES_3) $(LIBSECP256K1) \
-#	$(am__DEPENDENCIES_3) \
+#am__DEPENDENCIES_6 =  \
+#	$(LIBVENDETTA_ZMQ) \
 #	$(am__DEPENDENCIES_3)
+qt_test_test_vendetta_qt_DEPENDENCIES =  \
+	$(LIBVENDETTAQT) $(LIBVENDETTA_SERVER) \
+	$(am__append_47) $(am__DEPENDENCIES_6) \
+	$(LIBVENDETTA_CLI) $(LIBVENDETTA_COMMON) \
+	$(LIBVENDETTA_UTIL) \
+	$(LIBVENDETTA_CONSENSUS) \
+	$(LIBVENDETTA_CRYPTO) \
+	$(am__DEPENDENCIES_4) \
+	$(am__DEPENDENCIES_1) \
+	$(LIBLEVELDB_SSE42) \
+	$(am__DEPENDENCIES_2) \
+	$(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3) $(LIBSECP256K1) \
+	$(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3)
 qt_test_test_vendetta_qt_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(qt_test_test_vendetta_qt_CXXFLAGS) $(CXXFLAGS) \
@@ -1101,121 +1101,121 @@ am__test_test_vendetta_SOURCES_DIST = test/test_vendetta_main.cpp \
 	test/data/key_io_valid.json test/data/key_io_invalid.json \
 	test/data/script_tests.json test/data/sighash.json \
 	test/data/tx_invalid.json test/data/tx_valid.json
-#am__objects_30 = wallet/test/test_test_vendetta-wallet_test_fixture.$(OBJEXT)
-#am__objects_31 = test/test_test_vendetta-test_vendetta_main.$(OBJEXT) \
-#	test/test_test_vendetta-test_vendetta.$(OBJEXT) \
-#	$(am__objects_30)
-#am__objects_32 = wallet/test/test_test_vendetta-accounting_tests.$(OBJEXT) \
-#	wallet/test/test_test_vendetta-db_tests.$(OBJEXT) \
-#	wallet/test/test_test_vendetta-psbt_wallet_tests.$(OBJEXT) \
-#	wallet/test/test_test_vendetta-wallet_tests.$(OBJEXT) \
-#	wallet/test/test_test_vendetta-wallet_crypto_tests.$(OBJEXT) \
-#	wallet/test/test_test_vendetta-coinselector_tests.$(OBJEXT)
-#am__objects_33 = test/test_test_vendetta-arith_uint256_tests.$(OBJEXT) \
-#	test/test_test_vendetta-addrman_tests.$(OBJEXT) \
-#	test/test_test_vendetta-amount_tests.$(OBJEXT) \
-#	test/test_test_vendetta-allocator_tests.$(OBJEXT) \
-#	test/test_test_vendetta-base32_tests.$(OBJEXT) \
-#	test/test_test_vendetta-base58_tests.$(OBJEXT) \
-#	test/test_test_vendetta-base64_tests.$(OBJEXT) \
-#	test/test_test_vendetta-bech32_tests.$(OBJEXT) \
-#	test/test_test_vendetta-bip32_tests.$(OBJEXT) \
-#	test/test_test_vendetta-blockchain_tests.$(OBJEXT) \
-#	test/test_test_vendetta-blockencodings_tests.$(OBJEXT) \
-#	test/test_test_vendetta-bloom_tests.$(OBJEXT) \
-#	test/test_test_vendetta-bswap_tests.$(OBJEXT) \
-#	test/test_test_vendetta-checkqueue_tests.$(OBJEXT) \
-#	test/test_test_vendetta-coins_tests.$(OBJEXT) \
-#	test/test_test_vendetta-compress_tests.$(OBJEXT) \
-#	test/test_test_vendetta-crypto_tests.$(OBJEXT) \
-#	test/test_test_vendetta-cuckoocache_tests.$(OBJEXT) \
-#	test/test_test_vendetta-denialofservice_tests.$(OBJEXT) \
-#	test/test_test_vendetta-descriptor_tests.$(OBJEXT) \
-#	test/test_test_vendetta-getarg_tests.$(OBJEXT) \
-#	test/test_test_vendetta-hash_tests.$(OBJEXT) \
-#	test/test_test_vendetta-key_io_tests.$(OBJEXT) \
-#	test/test_test_vendetta-key_tests.$(OBJEXT) \
-#	test/test_test_vendetta-limitedmap_tests.$(OBJEXT) \
-#	test/test_test_vendetta-dbwrapper_tests.$(OBJEXT) \
-#	test/test_test_vendetta-main_tests.$(OBJEXT) \
-#	test/test_test_vendetta-mempool_tests.$(OBJEXT) \
-#	test/test_test_vendetta-merkle_tests.$(OBJEXT) \
-#	test/test_test_vendetta-merkleblock_tests.$(OBJEXT) \
-#	test/test_test_vendetta-miner_tests.$(OBJEXT) \
-#	test/test_test_vendetta-multisig_tests.$(OBJEXT) \
-#	test/test_test_vendetta-net_tests.$(OBJEXT) \
-#	test/test_test_vendetta-netbase_tests.$(OBJEXT) \
-#	test/test_test_vendetta-pmt_tests.$(OBJEXT) \
-#	test/test_test_vendetta-policyestimator_tests.$(OBJEXT) \
-#	test/test_test_vendetta-pow_tests.$(OBJEXT) \
-#	test/test_test_vendetta-prevector_tests.$(OBJEXT) \
-#	test/test_test_vendetta-raii_event_tests.$(OBJEXT) \
-#	test/test_test_vendetta-random_tests.$(OBJEXT) \
-#	test/test_test_vendetta-reverselock_tests.$(OBJEXT) \
-#	test/test_test_vendetta-rpc_tests.$(OBJEXT) \
-#	test/test_test_vendetta-sanity_tests.$(OBJEXT) \
-#	test/test_test_vendetta-scheduler_tests.$(OBJEXT) \
-#	test/test_test_vendetta-script_p2sh_tests.$(OBJEXT) \
-#	test/test_test_vendetta-script_tests.$(OBJEXT) \
-#	test/test_test_vendetta-script_standard_tests.$(OBJEXT) \
-#	test/test_test_vendetta-scriptnum_tests.$(OBJEXT) \
-#	test/test_test_vendetta-serialize_tests.$(OBJEXT) \
-#	test/test_test_vendetta-sighash_tests.$(OBJEXT) \
-#	test/test_test_vendetta-sigopcount_tests.$(OBJEXT) \
-#	test/test_test_vendetta-skiplist_tests.$(OBJEXT) \
-#	test/test_test_vendetta-streams_tests.$(OBJEXT) \
-#	test/test_test_vendetta-timedata_tests.$(OBJEXT) \
-#	test/test_test_vendetta-torcontrol_tests.$(OBJEXT) \
-#	test/test_test_vendetta-transaction_tests.$(OBJEXT) \
-#	test/test_test_vendetta-txindex_tests.$(OBJEXT) \
-#	test/test_test_vendetta-txvalidation_tests.$(OBJEXT) \
-#	test/test_test_vendetta-txvalidationcache_tests.$(OBJEXT) \
-#	test/test_test_vendetta-uint256_tests.$(OBJEXT) \
-#	test/test_test_vendetta-util_tests.$(OBJEXT) \
-#	test/test_test_vendetta-validation_block_tests.$(OBJEXT) \
-#	test/test_test_vendetta-versionbits_tests.$(OBJEXT) \
-#	$(am__objects_32)
-#am_test_test_vendetta_OBJECTS = $(am__objects_31) \
-#	$(am__objects_33) $(am__objects_4) \
-#	$(am__objects_4)
-#am__objects_34 = $(am__objects_4) $(am__objects_4)
-#nodist_test_test_vendetta_OBJECTS =  \
-#	$(am__objects_34)
+am__objects_30 = wallet/test/test_test_vendetta-wallet_test_fixture.$(OBJEXT)
+am__objects_31 = test/test_test_vendetta-test_vendetta_main.$(OBJEXT) \
+	test/test_test_vendetta-test_vendetta.$(OBJEXT) \
+	$(am__objects_30)
+am__objects_32 = wallet/test/test_test_vendetta-accounting_tests.$(OBJEXT) \
+	wallet/test/test_test_vendetta-db_tests.$(OBJEXT) \
+	wallet/test/test_test_vendetta-psbt_wallet_tests.$(OBJEXT) \
+	wallet/test/test_test_vendetta-wallet_tests.$(OBJEXT) \
+	wallet/test/test_test_vendetta-wallet_crypto_tests.$(OBJEXT) \
+	wallet/test/test_test_vendetta-coinselector_tests.$(OBJEXT)
+am__objects_33 = test/test_test_vendetta-arith_uint256_tests.$(OBJEXT) \
+	test/test_test_vendetta-addrman_tests.$(OBJEXT) \
+	test/test_test_vendetta-amount_tests.$(OBJEXT) \
+	test/test_test_vendetta-allocator_tests.$(OBJEXT) \
+	test/test_test_vendetta-base32_tests.$(OBJEXT) \
+	test/test_test_vendetta-base58_tests.$(OBJEXT) \
+	test/test_test_vendetta-base64_tests.$(OBJEXT) \
+	test/test_test_vendetta-bech32_tests.$(OBJEXT) \
+	test/test_test_vendetta-bip32_tests.$(OBJEXT) \
+	test/test_test_vendetta-blockchain_tests.$(OBJEXT) \
+	test/test_test_vendetta-blockencodings_tests.$(OBJEXT) \
+	test/test_test_vendetta-bloom_tests.$(OBJEXT) \
+	test/test_test_vendetta-bswap_tests.$(OBJEXT) \
+	test/test_test_vendetta-checkqueue_tests.$(OBJEXT) \
+	test/test_test_vendetta-coins_tests.$(OBJEXT) \
+	test/test_test_vendetta-compress_tests.$(OBJEXT) \
+	test/test_test_vendetta-crypto_tests.$(OBJEXT) \
+	test/test_test_vendetta-cuckoocache_tests.$(OBJEXT) \
+	test/test_test_vendetta-denialofservice_tests.$(OBJEXT) \
+	test/test_test_vendetta-descriptor_tests.$(OBJEXT) \
+	test/test_test_vendetta-getarg_tests.$(OBJEXT) \
+	test/test_test_vendetta-hash_tests.$(OBJEXT) \
+	test/test_test_vendetta-key_io_tests.$(OBJEXT) \
+	test/test_test_vendetta-key_tests.$(OBJEXT) \
+	test/test_test_vendetta-limitedmap_tests.$(OBJEXT) \
+	test/test_test_vendetta-dbwrapper_tests.$(OBJEXT) \
+	test/test_test_vendetta-main_tests.$(OBJEXT) \
+	test/test_test_vendetta-mempool_tests.$(OBJEXT) \
+	test/test_test_vendetta-merkle_tests.$(OBJEXT) \
+	test/test_test_vendetta-merkleblock_tests.$(OBJEXT) \
+	test/test_test_vendetta-miner_tests.$(OBJEXT) \
+	test/test_test_vendetta-multisig_tests.$(OBJEXT) \
+	test/test_test_vendetta-net_tests.$(OBJEXT) \
+	test/test_test_vendetta-netbase_tests.$(OBJEXT) \
+	test/test_test_vendetta-pmt_tests.$(OBJEXT) \
+	test/test_test_vendetta-policyestimator_tests.$(OBJEXT) \
+	test/test_test_vendetta-pow_tests.$(OBJEXT) \
+	test/test_test_vendetta-prevector_tests.$(OBJEXT) \
+	test/test_test_vendetta-raii_event_tests.$(OBJEXT) \
+	test/test_test_vendetta-random_tests.$(OBJEXT) \
+	test/test_test_vendetta-reverselock_tests.$(OBJEXT) \
+	test/test_test_vendetta-rpc_tests.$(OBJEXT) \
+	test/test_test_vendetta-sanity_tests.$(OBJEXT) \
+	test/test_test_vendetta-scheduler_tests.$(OBJEXT) \
+	test/test_test_vendetta-script_p2sh_tests.$(OBJEXT) \
+	test/test_test_vendetta-script_tests.$(OBJEXT) \
+	test/test_test_vendetta-script_standard_tests.$(OBJEXT) \
+	test/test_test_vendetta-scriptnum_tests.$(OBJEXT) \
+	test/test_test_vendetta-serialize_tests.$(OBJEXT) \
+	test/test_test_vendetta-sighash_tests.$(OBJEXT) \
+	test/test_test_vendetta-sigopcount_tests.$(OBJEXT) \
+	test/test_test_vendetta-skiplist_tests.$(OBJEXT) \
+	test/test_test_vendetta-streams_tests.$(OBJEXT) \
+	test/test_test_vendetta-timedata_tests.$(OBJEXT) \
+	test/test_test_vendetta-torcontrol_tests.$(OBJEXT) \
+	test/test_test_vendetta-transaction_tests.$(OBJEXT) \
+	test/test_test_vendetta-txindex_tests.$(OBJEXT) \
+	test/test_test_vendetta-txvalidation_tests.$(OBJEXT) \
+	test/test_test_vendetta-txvalidationcache_tests.$(OBJEXT) \
+	test/test_test_vendetta-uint256_tests.$(OBJEXT) \
+	test/test_test_vendetta-util_tests.$(OBJEXT) \
+	test/test_test_vendetta-validation_block_tests.$(OBJEXT) \
+	test/test_test_vendetta-versionbits_tests.$(OBJEXT) \
+	$(am__objects_32)
+am_test_test_vendetta_OBJECTS = $(am__objects_31) \
+	$(am__objects_33) $(am__objects_4) \
+	$(am__objects_4)
+am__objects_34 = $(am__objects_4) $(am__objects_4)
+nodist_test_test_vendetta_OBJECTS =  \
+	$(am__objects_34)
 test_test_vendetta_OBJECTS = $(am_test_test_vendetta_OBJECTS) \
 	$(nodist_test_test_vendetta_OBJECTS)
-##am__DEPENDENCIES_8 =  \
-##	$(am__DEPENDENCIES_3)
-#test_test_vendetta_DEPENDENCIES = $(am__append_27) \
-#	$(LIBVENDETTA_SERVER) $(LIBVENDETTA_CLI) \
-#	$(LIBVENDETTA_COMMON) $(LIBVENDETTA_UTIL) \
-#	$(LIBVENDETTA_CONSENSUS) \
-#	$(LIBVENDETTA_CRYPTO) $(am__DEPENDENCIES_4) \
-#	$(am__DEPENDENCIES_1) $(LIBLEVELDB_SSE42) \
-#	$(am__DEPENDENCIES_2) $(am__DEPENDENCIES_3) \
-#	$(am__DEPENDENCIES_3) $(LIBSECP256K1) \
-#	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-#	$(LIBVENDETTA_CONSENSUS) \
-#	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-#	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-#	$(am__DEPENDENCIES_8)
+#am__DEPENDENCIES_8 =  \
+#	$(am__DEPENDENCIES_3)
+test_test_vendetta_DEPENDENCIES = $(am__append_27) \
+	$(LIBVENDETTA_SERVER) $(LIBVENDETTA_CLI) \
+	$(LIBVENDETTA_COMMON) $(LIBVENDETTA_UTIL) \
+	$(LIBVENDETTA_CONSENSUS) \
+	$(LIBVENDETTA_CRYPTO) $(am__DEPENDENCIES_4) \
+	$(am__DEPENDENCIES_1) $(LIBLEVELDB_SSE42) \
+	$(am__DEPENDENCIES_2) $(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3) $(LIBSECP256K1) \
+	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
+	$(LIBVENDETTA_CONSENSUS) \
+	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_8)
 test_test_vendetta_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(test_test_vendetta_CXXFLAGS) $(CXXFLAGS) \
 	$(test_test_vendetta_LDFLAGS) $(LDFLAGS) -o $@
 am__test_test_vendetta_fuzzy_SOURCES_DIST =  \
 	test/test_vendetta_fuzzy.cpp
-#am_test_test_vendetta_fuzzy_OBJECTS = test/test_test_vendetta_fuzzy-test_vendetta_fuzzy.$(OBJEXT)
+am_test_test_vendetta_fuzzy_OBJECTS = test/test_test_vendetta_fuzzy-test_vendetta_fuzzy.$(OBJEXT)
 test_test_vendetta_fuzzy_OBJECTS =  \
 	$(am_test_test_vendetta_fuzzy_OBJECTS)
-#test_test_vendetta_fuzzy_DEPENDENCIES =  \
-#	$(am__DEPENDENCIES_4) $(LIBVENDETTA_SERVER) \
-#	$(LIBVENDETTA_COMMON) $(LIBVENDETTA_UTIL) \
-#	$(LIBVENDETTA_CONSENSUS) \
-#	$(LIBVENDETTA_CRYPTO) \
-#	$(LIBVENDETTA_CRYPTO_SSE41) \
-#	$(LIBVENDETTA_CRYPTO_AVX2) \
-#	$(LIBVENDETTA_CRYPTO_SHANI) $(LIBSECP256K1) \
-#	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3)
+test_test_vendetta_fuzzy_DEPENDENCIES =  \
+	$(am__DEPENDENCIES_4) $(LIBVENDETTA_SERVER) \
+	$(LIBVENDETTA_COMMON) $(LIBVENDETTA_UTIL) \
+	$(LIBVENDETTA_CONSENSUS) \
+	$(LIBVENDETTA_CRYPTO) \
+	$(LIBVENDETTA_CRYPTO_SSE41) \
+	$(LIBVENDETTA_CRYPTO_AVX2) \
+	$(LIBVENDETTA_CRYPTO_SHANI) $(LIBSECP256K1) \
+	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3)
 test_test_vendetta_fuzzy_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(test_test_vendetta_fuzzy_CXXFLAGS) $(CXXFLAGS) \
@@ -1627,14 +1627,14 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /home/devyamp/Desktop/7wuU0x-master/build-aux/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/devyamp/Desktop/newrepo/build-aux/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/ar
 ARFLAGS = cr
-AUTOCONF = ${SHELL} /home/devyamp/Desktop/7wuU0x-master/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /home/devyamp/Desktop/7wuU0x-master/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /home/devyamp/Desktop/7wuU0x-master/build-aux/missing automake-1.15
+AUTOCONF = ${SHELL} /home/devyamp/Desktop/newrepo/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/devyamp/Desktop/newrepo/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /home/devyamp/Desktop/newrepo/build-aux/missing automake-1.15
 AVX2_CXXFLAGS = -mavx -mavx2
 AWK = gawk
 BDB_CFLAGS = 
@@ -1647,7 +1647,7 @@ BOOST_LDFLAGS = -L/usr/lib/x86_64-linux-gnu
 BOOST_LIBS = -L/usr/lib/x86_64-linux-gnu -lboost_system -lboost_filesystem -lboost_thread -lboost_chrono
 BOOST_SYSTEM_LIB = -lboost_system
 BOOST_THREAD_LIB = -lboost_thread
-BOOST_UNIT_TEST_FRAMEWORK_LIB = 
+BOOST_UNIT_TEST_FRAMEWORK_LIB = -lboost_unit_test_framework
 BREW = 
 CC = gcc
 CCACHE = 
@@ -1731,7 +1731,7 @@ LTLIBOBJS =
 LT_SYS_LIBRARY_PATH = 
 LUPDATE = /usr/lib/qt5/bin/lupdate
 MAINT = 
-MAKEINFO = ${SHELL} /home/devyamp/Desktop/7wuU0x-master/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /home/devyamp/Desktop/newrepo/build-aux/missing makeinfo
 MAKENSIS = 
 MANIFEST_TOOL = :
 MINIUPNPC_CPPFLAGS = 
@@ -1826,7 +1826,7 @@ SSE42_CXXFLAGS = -msse4.2
 SSL_CFLAGS = 
 SSL_LIBS = -lssl
 STRIP = /usr/bin/strip
-TESTDEFS = 
+TESTDEFS =  -DBOOST_TEST_DYN_LINK
 TIFFCP = 
 UIC = /usr/lib/qt5/bin/uic
 UNIVALUE_CFLAGS = -I$(srcdir)/univalue/include
@@ -1846,10 +1846,10 @@ X11XCB_LIBS =
 XGETTEXT = /usr/bin/xgettext
 ZMQ_CFLAGS = 
 ZMQ_LIBS = 
-abs_builddir = /home/devyamp/Desktop/7wuU0x-master/src
-abs_srcdir = /home/devyamp/Desktop/7wuU0x-master/src
-abs_top_builddir = /home/devyamp/Desktop/7wuU0x-master
-abs_top_srcdir = /home/devyamp/Desktop/7wuU0x-master
+abs_builddir = /home/devyamp/Desktop/newrepo/src
+abs_srcdir = /home/devyamp/Desktop/newrepo/src
+abs_top_builddir = /home/devyamp/Desktop/newrepo
+abs_top_srcdir = /home/devyamp/Desktop/newrepo
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -1881,7 +1881,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/devyamp/Desktop/7wuU0x-master/build-aux/install-sh
+install_sh = ${SHELL} /home/devyamp/Desktop/newrepo/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -2421,146 +2421,146 @@ leveldb_libleveldb_sse42_a_CXXFLAGS =  \
 	$(leveldb_libleveldb_a_CXXFLAGS) \
 	$(am__append_22)
 leveldb_libleveldb_sse42_a_SOURCES = leveldb/port/port_posix_sse.cc
-#TEST_SRCDIR = test
-#TEST_BINARY = test/test_vendetta$(EXEEXT)
-#JSON_TEST_FILES = \
-#  test/data/base58_encode_decode.json \
-#  test/data/key_io_valid.json \
-#  test/data/key_io_invalid.json \
-#  test/data/script_tests.json \
-#  test/data/sighash.json \
-#  test/data/tx_invalid.json \
-#  test/data/tx_valid.json
+TEST_SRCDIR = test
+TEST_BINARY = test/test_vendetta$(EXEEXT)
+JSON_TEST_FILES = \
+  test/data/base58_encode_decode.json \
+  test/data/key_io_valid.json \
+  test/data/key_io_invalid.json \
+  test/data/script_tests.json \
+  test/data/sighash.json \
+  test/data/tx_invalid.json \
+  test/data/tx_valid.json
 
-#RAW_TEST_FILES = 
-#GENERATED_TEST_FILES = $(JSON_TEST_FILES:.json=.json.h) $(RAW_TEST_FILES:.raw=.raw.h)
-#VENDETTA_TEST_SUITE = test/test_vendetta_main.cpp \
-#	test/test_vendetta.h test/test_vendetta.cpp \
-#	$(am__append_26)
+RAW_TEST_FILES = 
+GENERATED_TEST_FILES = $(JSON_TEST_FILES:.json=.json.h) $(RAW_TEST_FILES:.raw=.raw.h)
+VENDETTA_TEST_SUITE = test/test_vendetta_main.cpp \
+	test/test_vendetta.h test/test_vendetta.cpp \
+	$(am__append_26)
 
 # test_vendetta binary #
-#VENDETTA_TESTS = test/arith_uint256_tests.cpp \
-#	test/scriptnum10.h test/addrman_tests.cpp \
-#	test/amount_tests.cpp \
-#	test/allocator_tests.cpp \
-#	test/base32_tests.cpp test/base58_tests.cpp \
-#	test/base64_tests.cpp test/bech32_tests.cpp \
-#	test/bip32_tests.cpp \
-#	test/blockchain_tests.cpp \
-#	test/blockencodings_tests.cpp \
-#	test/bloom_tests.cpp test/bswap_tests.cpp \
-#	test/checkqueue_tests.cpp \
-#	test/coins_tests.cpp \
-#	test/compress_tests.cpp \
-#	test/crypto_tests.cpp \
-#	test/cuckoocache_tests.cpp \
-#	test/denialofservice_tests.cpp \
-#	test/descriptor_tests.cpp \
-#	test/getarg_tests.cpp test/hash_tests.cpp \
-#	test/key_io_tests.cpp test/key_tests.cpp \
-#	test/limitedmap_tests.cpp \
-#	test/dbwrapper_tests.cpp \
-#	test/main_tests.cpp test/mempool_tests.cpp \
-#	test/merkle_tests.cpp \
-#	test/merkleblock_tests.cpp \
-#	test/miner_tests.cpp \
-#	test/multisig_tests.cpp test/net_tests.cpp \
-#	test/netbase_tests.cpp test/pmt_tests.cpp \
-#	test/policyestimator_tests.cpp \
-#	test/pow_tests.cpp test/prevector_tests.cpp \
-#	test/raii_event_tests.cpp \
-#	test/random_tests.cpp \
-#	test/reverselock_tests.cpp \
-#	test/rpc_tests.cpp test/sanity_tests.cpp \
-#	test/scheduler_tests.cpp \
-#	test/script_p2sh_tests.cpp \
-#	test/script_tests.cpp \
-#	test/script_standard_tests.cpp \
-#	test/scriptnum_tests.cpp \
-#	test/serialize_tests.cpp \
-#	test/sighash_tests.cpp \
-#	test/sigopcount_tests.cpp \
-#	test/skiplist_tests.cpp \
-#	test/streams_tests.cpp \
-#	test/timedata_tests.cpp \
-#	test/torcontrol_tests.cpp \
-#	test/transaction_tests.cpp \
-#	test/txindex_tests.cpp \
-#	test/txvalidation_tests.cpp \
-#	test/txvalidationcache_tests.cpp \
-#	test/uint256_tests.cpp test/util_tests.cpp \
-#	test/validation_block_tests.cpp \
-#	test/versionbits_tests.cpp $(am__append_25)
-#test_test_vendetta_SOURCES = $(VENDETTA_TEST_SUITE) $(VENDETTA_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
-#test_test_vendetta_CPPFLAGS = $(AM_CPPFLAGS) $(VENDETTA_INCLUDES) $(TESTDEFS) $(EVENT_CFLAGS)
-#test_test_vendetta_LDADD = $(am__append_27) \
-#	$(LIBVENDETTA_SERVER) $(LIBVENDETTA_CLI) \
-#	$(LIBVENDETTA_COMMON) $(LIBVENDETTA_UTIL) \
-#	$(LIBVENDETTA_CONSENSUS) \
-#	$(LIBVENDETTA_CRYPTO) $(LIBUNIVALUE) \
-#	$(LIBLEVELDB) $(LIBLEVELDB_SSE42) \
-#	$(LIBMEMENV) $(BOOST_LIBS) \
-#	$(BOOST_UNIT_TEST_FRAMEWORK_LIB) \
-#	$(LIBSECP256K1) $(EVENT_LIBS) \
-#	$(EVENT_PTHREADS_LIBS) \
-#	$(LIBVENDETTA_CONSENSUS) $(BDB_LIBS) \
-#	$(SSL_LIBS) $(CRYPTO_LIBS) \
-#	$(MINIUPNPC_LIBS) $(am__append_28)
-#test_test_vendetta_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-#test_test_vendetta_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
+VENDETTA_TESTS = test/arith_uint256_tests.cpp \
+	test/scriptnum10.h test/addrman_tests.cpp \
+	test/amount_tests.cpp \
+	test/allocator_tests.cpp \
+	test/base32_tests.cpp test/base58_tests.cpp \
+	test/base64_tests.cpp test/bech32_tests.cpp \
+	test/bip32_tests.cpp \
+	test/blockchain_tests.cpp \
+	test/blockencodings_tests.cpp \
+	test/bloom_tests.cpp test/bswap_tests.cpp \
+	test/checkqueue_tests.cpp \
+	test/coins_tests.cpp \
+	test/compress_tests.cpp \
+	test/crypto_tests.cpp \
+	test/cuckoocache_tests.cpp \
+	test/denialofservice_tests.cpp \
+	test/descriptor_tests.cpp \
+	test/getarg_tests.cpp test/hash_tests.cpp \
+	test/key_io_tests.cpp test/key_tests.cpp \
+	test/limitedmap_tests.cpp \
+	test/dbwrapper_tests.cpp \
+	test/main_tests.cpp test/mempool_tests.cpp \
+	test/merkle_tests.cpp \
+	test/merkleblock_tests.cpp \
+	test/miner_tests.cpp \
+	test/multisig_tests.cpp test/net_tests.cpp \
+	test/netbase_tests.cpp test/pmt_tests.cpp \
+	test/policyestimator_tests.cpp \
+	test/pow_tests.cpp test/prevector_tests.cpp \
+	test/raii_event_tests.cpp \
+	test/random_tests.cpp \
+	test/reverselock_tests.cpp \
+	test/rpc_tests.cpp test/sanity_tests.cpp \
+	test/scheduler_tests.cpp \
+	test/script_p2sh_tests.cpp \
+	test/script_tests.cpp \
+	test/script_standard_tests.cpp \
+	test/scriptnum_tests.cpp \
+	test/serialize_tests.cpp \
+	test/sighash_tests.cpp \
+	test/sigopcount_tests.cpp \
+	test/skiplist_tests.cpp \
+	test/streams_tests.cpp \
+	test/timedata_tests.cpp \
+	test/torcontrol_tests.cpp \
+	test/transaction_tests.cpp \
+	test/txindex_tests.cpp \
+	test/txvalidation_tests.cpp \
+	test/txvalidationcache_tests.cpp \
+	test/uint256_tests.cpp test/util_tests.cpp \
+	test/validation_block_tests.cpp \
+	test/versionbits_tests.cpp $(am__append_25)
+test_test_vendetta_SOURCES = $(VENDETTA_TEST_SUITE) $(VENDETTA_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
+test_test_vendetta_CPPFLAGS = $(AM_CPPFLAGS) $(VENDETTA_INCLUDES) $(TESTDEFS) $(EVENT_CFLAGS)
+test_test_vendetta_LDADD = $(am__append_27) \
+	$(LIBVENDETTA_SERVER) $(LIBVENDETTA_CLI) \
+	$(LIBVENDETTA_COMMON) $(LIBVENDETTA_UTIL) \
+	$(LIBVENDETTA_CONSENSUS) \
+	$(LIBVENDETTA_CRYPTO) $(LIBUNIVALUE) \
+	$(LIBLEVELDB) $(LIBLEVELDB_SSE42) \
+	$(LIBMEMENV) $(BOOST_LIBS) \
+	$(BOOST_UNIT_TEST_FRAMEWORK_LIB) \
+	$(LIBSECP256K1) $(EVENT_LIBS) \
+	$(EVENT_PTHREADS_LIBS) \
+	$(LIBVENDETTA_CONSENSUS) $(BDB_LIBS) \
+	$(SSL_LIBS) $(CRYPTO_LIBS) \
+	$(MINIUPNPC_LIBS) $(am__append_28)
+test_test_vendetta_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+test_test_vendetta_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
 #
 
 # test_vendetta_fuzzy binary #
-#test_test_vendetta_fuzzy_SOURCES = test/test_vendetta_fuzzy.cpp
-#test_test_vendetta_fuzzy_CPPFLAGS = $(AM_CPPFLAGS) $(VENDETTA_INCLUDES)
-#test_test_vendetta_fuzzy_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-#test_test_vendetta_fuzzy_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-#test_test_vendetta_fuzzy_LDADD = $(LIBUNIVALUE) \
-#	$(LIBVENDETTA_SERVER) $(LIBVENDETTA_COMMON) \
-#	$(LIBVENDETTA_UTIL) \
-#	$(LIBVENDETTA_CONSENSUS) \
-#	$(LIBVENDETTA_CRYPTO) \
-#	$(LIBVENDETTA_CRYPTO_SSE41) \
-#	$(LIBVENDETTA_CRYPTO_AVX2) \
-#	$(LIBVENDETTA_CRYPTO_SHANI) $(LIBSECP256K1) \
-#	$(BOOST_LIBS) $(CRYPTO_LIBS)
+test_test_vendetta_fuzzy_SOURCES = test/test_vendetta_fuzzy.cpp
+test_test_vendetta_fuzzy_CPPFLAGS = $(AM_CPPFLAGS) $(VENDETTA_INCLUDES)
+test_test_vendetta_fuzzy_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+test_test_vendetta_fuzzy_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+test_test_vendetta_fuzzy_LDADD = $(LIBUNIVALUE) \
+	$(LIBVENDETTA_SERVER) $(LIBVENDETTA_COMMON) \
+	$(LIBVENDETTA_UTIL) \
+	$(LIBVENDETTA_CONSENSUS) \
+	$(LIBVENDETTA_CRYPTO) \
+	$(LIBVENDETTA_CRYPTO_SSE41) \
+	$(LIBVENDETTA_CRYPTO_AVX2) \
+	$(LIBVENDETTA_CRYPTO_SHANI) $(LIBSECP256K1) \
+	$(BOOST_LIBS) $(CRYPTO_LIBS)
 #
-#nodist_test_test_vendetta_SOURCES = $(GENERATED_TEST_FILES)
-#CLEAN_VENDETTA_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
-#BENCH_SRCDIR = bench
-#BENCH_BINARY = bench/bench_vendetta$(EXEEXT)
-#RAW_BENCH_FILES = \
-#  bench/data/block413567.raw
+nodist_test_test_vendetta_SOURCES = $(GENERATED_TEST_FILES)
+CLEAN_VENDETTA_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
+BENCH_SRCDIR = bench
+BENCH_BINARY = bench/bench_vendetta$(EXEEXT)
+RAW_BENCH_FILES = \
+  bench/data/block413567.raw
 
-#GENERATED_BENCH_FILES = $(RAW_BENCH_FILES:.raw=.raw.h)
-#bench_bench_vendetta_SOURCES = $(RAW_BENCH_FILES) \
-#	bench/bench_vendetta.cpp bench/bench.cpp \
-#	bench/bench.h bench/block_assemble.cpp \
-#	bench/checkblock.cpp bench/checkqueue.cpp \
-#	bench/examples.cpp bench/rollingbloom.cpp \
-#	bench/crypto_hash.cpp \
-#	bench/ccoins_caching.cpp \
-#	bench/merkle_root.cpp \
-#	bench/mempool_eviction.cpp \
-#	bench/verify_script.cpp bench/base58.cpp \
-#	bench/bech32.cpp bench/lockedpool.cpp \
-#	bench/prevector.cpp $(am__append_32)
-#nodist_bench_bench_vendetta_SOURCES = $(GENERATED_BENCH_FILES)
-#bench_bench_vendetta_CPPFLAGS = $(AM_CPPFLAGS) $(VENDETTA_INCLUDES) $(EVENT_CLFAGS) $(EVENT_PTHREADS_CFLAGS) -I$(builddir)/bench/
-#bench_bench_vendetta_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-#bench_bench_vendetta_LDADD = $(LIBVENDETTA_WALLET) \
-#	$(LIBVENDETTA_SERVER) $(LIBVENDETTA_COMMON) \
-#	$(LIBVENDETTA_UTIL) \
-#	$(LIBVENDETTA_CONSENSUS) \
-#	$(LIBVENDETTA_CRYPTO) $(LIBLEVELDB) \
-#	$(LIBLEVELDB_SSE42) $(LIBMEMENV) \
-#	$(LIBSECP256K1) $(LIBUNIVALUE) \
-#	$(am__append_31) $(BOOST_LIBS) $(BDB_LIBS) \
-#	$(SSL_LIBS) $(CRYPTO_LIBS) \
-#	$(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) \
-#	$(EVENT_LIBS)
-#bench_bench_vendetta_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-#CLEAN_VENDETTA_BENCH = bench/*.gcda bench/*.gcno $(GENERATED_BENCH_FILES)
+GENERATED_BENCH_FILES = $(RAW_BENCH_FILES:.raw=.raw.h)
+bench_bench_vendetta_SOURCES = $(RAW_BENCH_FILES) \
+	bench/bench_vendetta.cpp bench/bench.cpp \
+	bench/bench.h bench/block_assemble.cpp \
+	bench/checkblock.cpp bench/checkqueue.cpp \
+	bench/examples.cpp bench/rollingbloom.cpp \
+	bench/crypto_hash.cpp \
+	bench/ccoins_caching.cpp \
+	bench/merkle_root.cpp \
+	bench/mempool_eviction.cpp \
+	bench/verify_script.cpp bench/base58.cpp \
+	bench/bech32.cpp bench/lockedpool.cpp \
+	bench/prevector.cpp $(am__append_32)
+nodist_bench_bench_vendetta_SOURCES = $(GENERATED_BENCH_FILES)
+bench_bench_vendetta_CPPFLAGS = $(AM_CPPFLAGS) $(VENDETTA_INCLUDES) $(EVENT_CLFAGS) $(EVENT_PTHREADS_CFLAGS) -I$(builddir)/bench/
+bench_bench_vendetta_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+bench_bench_vendetta_LDADD = $(LIBVENDETTA_WALLET) \
+	$(LIBVENDETTA_SERVER) $(LIBVENDETTA_COMMON) \
+	$(LIBVENDETTA_UTIL) \
+	$(LIBVENDETTA_CONSENSUS) \
+	$(LIBVENDETTA_CRYPTO) $(LIBLEVELDB) \
+	$(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+	$(LIBSECP256K1) $(LIBUNIVALUE) \
+	$(am__append_31) $(BOOST_LIBS) $(BDB_LIBS) \
+	$(SSL_LIBS) $(CRYPTO_LIBS) \
+	$(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) \
+	$(EVENT_LIBS)
+bench_bench_vendetta_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+CLEAN_VENDETTA_BENCH = bench/*.gcda bench/*.gcno $(GENERATED_BENCH_FILES)
 
 # vendetta qt core #
 QT_TS = \
@@ -2949,54 +2949,54 @@ qt_vendetta_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
 #locale/foo.ts -> locale/foo.qm
 QT_QM = $(QT_TS:.ts=.qm)
 CLEAN_QT = $(nodist_qt_libvendettaqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_vendetta_locale.qrc
-#TEST_QT_MOC_CPP = qt/test/moc_compattests.cpp \
-#	qt/test/moc_rpcnestedtests.cpp \
-#	qt/test/moc_uritests.cpp \
-#	$(am__append_45)
-#TEST_QT_H = \
-#  qt/test/addressbooktests.h \
-#  qt/test/compattests.h \
-#  qt/test/rpcnestedtests.h \
-#  qt/test/uritests.h \
-#  qt/test/util.h \
-#  qt/test/paymentrequestdata.h \
-#  qt/test/paymentservertests.h \
-#  qt/test/wallettests.h
+TEST_QT_MOC_CPP = qt/test/moc_compattests.cpp \
+	qt/test/moc_rpcnestedtests.cpp \
+	qt/test/moc_uritests.cpp \
+	$(am__append_45)
+TEST_QT_H = \
+  qt/test/addressbooktests.h \
+  qt/test/compattests.h \
+  qt/test/rpcnestedtests.h \
+  qt/test/uritests.h \
+  qt/test/util.h \
+  qt/test/paymentrequestdata.h \
+  qt/test/paymentservertests.h \
+  qt/test/wallettests.h
 
-#TEST_VENDETTA_CPP = \
-#  test/test_vendetta.cpp
+TEST_VENDETTA_CPP = \
+  test/test_vendetta.cpp
 
-#TEST_VENDETTA_H = \
-#  test/test_vendetta.h
+TEST_VENDETTA_H = \
+  test/test_vendetta.h
 
-#qt_test_test_vendetta_qt_CPPFLAGS = $(AM_CPPFLAGS) $(VENDETTA_INCLUDES) $(VENDETTA_QT_INCLUDES) \
-#  $(QT_INCLUDES) $(QT_TEST_INCLUDES) $(PROTOBUF_CFLAGS)
+qt_test_test_vendetta_qt_CPPFLAGS = $(AM_CPPFLAGS) $(VENDETTA_INCLUDES) $(VENDETTA_QT_INCLUDES) \
+  $(QT_INCLUDES) $(QT_TEST_INCLUDES) $(PROTOBUF_CFLAGS)
 
-#qt_test_test_vendetta_qt_SOURCES =  \
-#	qt/test/compattests.cpp \
-#	qt/test/rpcnestedtests.cpp \
-#	qt/test/test_main.cpp \
-#	qt/test/uritests.cpp qt/test/util.cpp \
-#	$(TEST_QT_H) $(TEST_VENDETTA_CPP) \
-#	$(TEST_VENDETTA_H) $(am__append_46)
-#nodist_qt_test_test_vendetta_qt_SOURCES = $(TEST_QT_MOC_CPP)
-#qt_test_test_vendetta_qt_LDADD =  \
-#	$(LIBVENDETTAQT) $(LIBVENDETTA_SERVER) \
-#	$(am__append_47) $(am__append_48) \
-#	$(LIBVENDETTA_CLI) $(LIBVENDETTA_COMMON) \
-#	$(LIBVENDETTA_UTIL) \
-#	$(LIBVENDETTA_CONSENSUS) \
-#	$(LIBVENDETTA_CRYPTO) $(LIBUNIVALUE) \
-#	$(LIBLEVELDB) $(LIBLEVELDB_SSE42) \
-#	$(LIBMEMENV) $(BOOST_LIBS) \
-#	$(QT_DBUS_LIBS) $(QT_TEST_LIBS) \
-#	$(QT_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) \
-#	$(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) \
-#	$(MINIUPNPC_LIBS) $(LIBSECP256K1) \
-#	$(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-#qt_test_test_vendetta_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-#qt_test_test_vendetta_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
-#CLEAN_VENDETTA_QT_TEST = $(TEST_QT_MOC_CPP) qt/test/*.gcda qt/test/*.gcno
+qt_test_test_vendetta_qt_SOURCES =  \
+	qt/test/compattests.cpp \
+	qt/test/rpcnestedtests.cpp \
+	qt/test/test_main.cpp \
+	qt/test/uritests.cpp qt/test/util.cpp \
+	$(TEST_QT_H) $(TEST_VENDETTA_CPP) \
+	$(TEST_VENDETTA_H) $(am__append_46)
+nodist_qt_test_test_vendetta_qt_SOURCES = $(TEST_QT_MOC_CPP)
+qt_test_test_vendetta_qt_LDADD =  \
+	$(LIBVENDETTAQT) $(LIBVENDETTA_SERVER) \
+	$(am__append_47) $(am__append_48) \
+	$(LIBVENDETTA_CLI) $(LIBVENDETTA_COMMON) \
+	$(LIBVENDETTA_UTIL) \
+	$(LIBVENDETTA_CONSENSUS) \
+	$(LIBVENDETTA_CRYPTO) $(LIBUNIVALUE) \
+	$(LIBLEVELDB) $(LIBLEVELDB_SSE42) \
+	$(LIBMEMENV) $(BOOST_LIBS) \
+	$(QT_DBUS_LIBS) $(QT_TEST_LIBS) \
+	$(QT_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) \
+	$(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) \
+	$(MINIUPNPC_LIBS) $(LIBSECP256K1) \
+	$(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+qt_test_test_vendetta_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_test_test_vendetta_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+CLEAN_VENDETTA_QT_TEST = $(TEST_QT_MOC_CPP) qt/test/*.gcda qt/test/*.gcno
 all: all-recursive
 
 .SUFFIXES:
@@ -10376,7 +10376,7 @@ distdir: $(DISTFILES)
 	      || exit 1; \
 	  fi; \
 	done
-check-local:
+#check-local:
 check-am: all-am
 	$(MAKE) $(AM_MAKEFLAGS) check-TESTS check-local
 check: check-recursive
@@ -10609,56 +10609,56 @@ check-security: $(bin_PROGRAMS)
 	@test -f $(PROTOC)
 	$(AM_V_GEN) $(PROTOC) --cpp_out=$(@D) --proto_path=$(<D) $<
 
-#$(VENDETTA_TESTS): $(GENERATED_TEST_FILES)
+$(VENDETTA_TESTS): $(GENERATED_TEST_FILES)
 
-#vendetta_test: $(TEST_BINARY)
+vendetta_test: $(TEST_BINARY)
 
-#vendetta_test_check: $(TEST_BINARY) FORCE
-#	$(MAKE) check-TESTS TESTS=$^
+vendetta_test_check: $(TEST_BINARY) FORCE
+	$(MAKE) check-TESTS TESTS=$^
 
-#vendetta_test_clean : FORCE
-#	rm -f $(CLEAN_VENDETTA_TEST) $(test_test_vendetta_OBJECTS) $(TEST_BINARY)
+vendetta_test_clean : FORCE
+	rm -f $(CLEAN_VENDETTA_TEST) $(test_test_vendetta_OBJECTS) $(TEST_BINARY)
 
-#check-local: $(VENDETTA_TESTS:.cpp=.cpp.test)
-#	@echo "Running test/util/vendetta-util-test.py..."
-#	$(PYTHON) $(top_builddir)/test/util/vendetta-util-test.py
-#	@echo "Running test/util/rpcauth-test.py..."
-#	$(PYTHON) $(top_builddir)/test/util/rpcauth-test.py
-#	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C secp256k1 check
-#	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C univalue check
+check-local: $(VENDETTA_TESTS:.cpp=.cpp.test)
+	@echo "Running test/util/vendetta-util-test.py..."
+	$(PYTHON) $(top_builddir)/test/util/vendetta-util-test.py
+	@echo "Running test/util/rpcauth-test.py..."
+	$(PYTHON) $(top_builddir)/test/util/rpcauth-test.py
+	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C secp256k1 check
+	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C univalue check
 
-#%.cpp.test: %.cpp
-#	@echo Running tests: `cat $< | grep -E "(BOOST_FIXTURE_TEST_SUITE\\(|BOOST_AUTO_TEST_SUITE\\()" | cut -d '(' -f 2 | cut -d ',' -f 1 | cut -d ')' -f 1` from $<
-#	$(AM_V_at)$(TEST_BINARY) -l test_suite -t "`cat $< | grep -E "(BOOST_FIXTURE_TEST_SUITE\\(|BOOST_AUTO_TEST_SUITE\\()" | cut -d '(' -f 2 | cut -d ',' -f 1 | cut -d ')' -f 1`" > $<.log 2>&1 || (cat $<.log && false)
+%.cpp.test: %.cpp
+	@echo Running tests: `cat $< | grep -E "(BOOST_FIXTURE_TEST_SUITE\\(|BOOST_AUTO_TEST_SUITE\\()" | cut -d '(' -f 2 | cut -d ',' -f 1 | cut -d ')' -f 1` from $<
+	$(AM_V_at)$(TEST_BINARY) -l test_suite -t "`cat $< | grep -E "(BOOST_FIXTURE_TEST_SUITE\\(|BOOST_AUTO_TEST_SUITE\\()" | cut -d '(' -f 2 | cut -d ',' -f 1 | cut -d ')' -f 1`" > $<.log 2>&1 || (cat $<.log && false)
 
-#%.json.h: %.json
-#	@$(MKDIR_P) $(@D)
-#	@{ \
-#	 echo "namespace json_tests{" && \
-#	 echo "static unsigned const char $(*F)[] = {" && \
-#	 $(HEXDUMP) -v -e '8/1 "0x%02x, "' -e '"\n"' $< | $(SED) -e 's/0x  ,//g' && \
-#	 echo "};};"; \
-#	} > "$@.new" && mv -f "$@.new" "$@"
-#	@echo "Generated $@"
+%.json.h: %.json
+	@$(MKDIR_P) $(@D)
+	@{ \
+	 echo "namespace json_tests{" && \
+	 echo "static unsigned const char $(*F)[] = {" && \
+	 $(HEXDUMP) -v -e '8/1 "0x%02x, "' -e '"\n"' $< | $(SED) -e 's/0x  ,//g' && \
+	 echo "};};"; \
+	} > "$@.new" && mv -f "$@.new" "$@"
+	@echo "Generated $@"
 
-#bench/checkblock.cpp: bench/data/block413567.raw.h
+bench/checkblock.cpp: bench/data/block413567.raw.h
 
-#vendetta_bench: $(BENCH_BINARY)
+vendetta_bench: $(BENCH_BINARY)
 
-#bench: $(BENCH_BINARY) FORCE
-#	$(BENCH_BINARY)
+bench: $(BENCH_BINARY) FORCE
+	$(BENCH_BINARY)
 
-#vendetta_bench_clean : FORCE
-#	rm -f $(CLEAN_VENDETTA_BENCH) $(bench_bench_vendetta_OBJECTS) $(BENCH_BINARY)
+vendetta_bench_clean : FORCE
+	rm -f $(CLEAN_VENDETTA_BENCH) $(bench_bench_vendetta_OBJECTS) $(BENCH_BINARY)
 
-#%.raw.h: %.raw
-#	@$(MKDIR_P) $(@D)
-#	@{ \
-#	 echo "static unsigned const char $(*F)[] = {" && \
-#	 $(HEXDUMP) -v -e '8/1 "0x%02x, "' -e '"\n"' $< | $(SED) -e 's/0x  ,//g' && \
-#	 echo "};"; \
-#	} > "$@.new" && mv -f "$@.new" "$@"
-#	@echo "Generated $@"
+%.raw.h: %.raw
+	@$(MKDIR_P) $(@D)
+	@{ \
+	 echo "static unsigned const char $(*F)[] = {" && \
+	 $(HEXDUMP) -v -e '8/1 "0x%02x, "' -e '"\n"' $< | $(SED) -e 's/0x  ,//g' && \
+	 echo "};"; \
+	} > "$@.new" && mv -f "$@.new" "$@"
+	@echo "Generated $@"
 
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
@@ -10715,13 +10715,13 @@ moc_%.cpp: %.h
 	@$(MKDIR_P) $(@D)
 	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LRELEASE) -silent $< -qm $@
 
-#test_vendetta_qt : qt/test/test_vendetta-qt$(EXEEXT)
+test_vendetta_qt : qt/test/test_vendetta-qt$(EXEEXT)
 
-#test_vendetta_qt_check : qt/test/test_vendetta-qt$(EXEEXT) FORCE
-#	$(MAKE) check-TESTS TESTS=$^
+test_vendetta_qt_check : qt/test/test_vendetta-qt$(EXEEXT) FORCE
+	$(MAKE) check-TESTS TESTS=$^
 
-#test_vendetta_qt_clean: FORCE
-#	rm -f $(CLEAN_VENDETTA_QT_TEST) $(qt_test_test_vendetta_qt_OBJECTS)
+test_vendetta_qt_clean: FORCE
+	rm -f $(CLEAN_VENDETTA_QT_TEST) $(qt_test_test_vendetta_qt_OBJECTS)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

@@ -1167,11 +1167,13 @@ libvendetta_util_a-util.o: util.cpp /usr/include/stdc-predef.h util.h \
  /usr/include/boost/detail/atomic_redef_macros.hpp \
  /usr/include/openssl/crypto.h /usr/include/openssl/e_os2.h \
  /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
- /usr/include/openssl/stack.h /usr/include/openssl/safestack.h \
- /usr/include/openssl/opensslv.h /usr/include/openssl/ossl_typ.h \
- /usr/include/openssl/symhacks.h /usr/include/openssl/rand.h \
+ /usr/include/openssl/opensslv.h /usr/include/openssl/safestack.h \
+ /usr/include/openssl/stack.h /usr/include/openssl/ossl_typ.h \
+ /usr/include/openssl/cryptoerr.h /usr/include/openssl/symhacks.h \
+ /usr/include/openssl/rand.h /usr/include/openssl/randerr.h \
  /usr/include/openssl/conf.h /usr/include/openssl/bio.h \
- /usr/include/openssl/lhash.h
+ /usr/include/openssl/bioerr.h /usr/include/openssl/lhash.h \
+ /usr/include/openssl/conferr.h
 
 /usr/include/stdc-predef.h:
 
@@ -3815,20 +3817,28 @@ utilstrencodings.h:
 
 /usr/include/x86_64-linux-gnu/openssl/opensslconf.h:
 
-/usr/include/openssl/stack.h:
+/usr/include/openssl/opensslv.h:
 
 /usr/include/openssl/safestack.h:
 
-/usr/include/openssl/opensslv.h:
+/usr/include/openssl/stack.h:
 
 /usr/include/openssl/ossl_typ.h:
+
+/usr/include/openssl/cryptoerr.h:
 
 /usr/include/openssl/symhacks.h:
 
 /usr/include/openssl/rand.h:
 
+/usr/include/openssl/randerr.h:
+
 /usr/include/openssl/conf.h:
 
 /usr/include/openssl/bio.h:
 
+/usr/include/openssl/bioerr.h:
+
 /usr/include/openssl/lhash.h:
+
+/usr/include/openssl/conferr.h:

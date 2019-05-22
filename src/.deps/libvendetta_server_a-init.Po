@@ -1443,8 +1443,7 @@ libvendetta_server_a-init.o: init.cpp /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
  /usr/include/openssl/opensslv.h /usr/include/openssl/safestack.h \
  /usr/include/openssl/stack.h /usr/include/openssl/ossl_typ.h \
- /usr/include/openssl/cryptoerr.h /usr/include/openssl/symhacks.h \
- zmq/zmqnotificationinterface.h zmq/zmqrpc.h
+ /usr/include/openssl/cryptoerr.h /usr/include/openssl/symhacks.h
 
 /usr/include/stdc-predef.h:
 
@@ -4777,7 +4776,3 @@ walletinitinterface.h:
 /usr/include/openssl/cryptoerr.h:
 
 /usr/include/openssl/symhacks.h:
-
-zmq/zmqnotificationinterface.h:
-
-zmq/zmqrpc.h:

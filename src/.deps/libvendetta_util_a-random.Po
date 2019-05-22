@@ -595,7 +595,7 @@ libvendetta_util_a-random.o: random.cpp /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/cpuid.h \
  /usr/include/openssl/err.h /usr/include/openssl/e_os2.h \
  /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
- /usr/include/openssl/ossl_typ.h \
+ /usr/include/openssl/opensslv.h /usr/include/openssl/ossl_typ.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -604,10 +604,11 @@ libvendetta_util_a-random.o: random.cpp /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/openssl/bio.h \
- /usr/include/openssl/crypto.h /usr/include/openssl/stack.h \
- /usr/include/openssl/safestack.h /usr/include/openssl/opensslv.h \
- /usr/include/openssl/symhacks.h /usr/include/openssl/lhash.h \
- /usr/include/openssl/rand.h
+ /usr/include/openssl/crypto.h /usr/include/openssl/safestack.h \
+ /usr/include/openssl/stack.h /usr/include/openssl/cryptoerr.h \
+ /usr/include/openssl/symhacks.h /usr/include/openssl/bioerr.h \
+ /usr/include/openssl/lhash.h /usr/include/openssl/rand.h \
+ /usr/include/openssl/randerr.h
 
 /usr/include/stdc-predef.h:
 
@@ -2007,6 +2008,8 @@ utiltime.h:
 
 /usr/include/x86_64-linux-gnu/openssl/opensslconf.h:
 
+/usr/include/openssl/opensslv.h:
+
 /usr/include/openssl/ossl_typ.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h:
@@ -2031,14 +2034,18 @@ utiltime.h:
 
 /usr/include/openssl/crypto.h:
 
-/usr/include/openssl/stack.h:
-
 /usr/include/openssl/safestack.h:
 
-/usr/include/openssl/opensslv.h:
+/usr/include/openssl/stack.h:
+
+/usr/include/openssl/cryptoerr.h:
 
 /usr/include/openssl/symhacks.h:
+
+/usr/include/openssl/bioerr.h:
 
 /usr/include/openssl/lhash.h:
 
 /usr/include/openssl/rand.h:
+
+/usr/include/openssl/randerr.h:
